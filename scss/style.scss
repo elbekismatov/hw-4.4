@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.primary-btn {
+  background: transparent;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 94%;
+  letter-spacing: 0.15em;
+  color: #fff;
+  padding: 25px 55px;
+  border: 2px solid #ffffff98;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: #111;
+    background: #fff;
+  }
+}
+
+.section-content {
+  max-width: 445px;
+
+  img {
+    margin-bottom: 58px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #242b37;
+    margin-bottom: 27px;
+    max-width: 80%;
+  }
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #242b37;
+  }
+}
+
+.header {
+  background-image: url("/images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  .container {
+    padding-top: 65px;
+    .logo {
+      margin-bottom: 153px;
+      display: inline-block;
+    }
+
+    .header-content {
+      max-width: 507px;
+      h2 {
+        font-weight: 300;
+        font-size: 80px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #fff;
+        margin-bottom: 40px;
+      }
+      button {
+        margin-bottom: 158px;
+      }
+    }
+  }
+}
+
+.enjoyable-section {
+  background-image: url(/images/bg-pattern.png);
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  transform: translateY(-70px);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.locally-section {
+  background-image: url(/images/bg-pattern-right.png);
+  background-repeat: no-repeat;
+  background-position: right 80%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .locally-picture {
+      position: relative;
+      .pattern {
+        position: absolute;
+        top: 282px;
+        right: -120px;
+      }
+    }
+  }
+}
+
+.highlights-section {
+  background: #111;
+  padding: 200px 0 120px;
+  transform: translateY(-80px);
+  position: relative;
+  z-index: -1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 441px;
+    .highlights-content {
+      h2,
+      p {
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      max-width: 540px;
+      padding-top: 60px;
+
+      .card {
+        display: flex;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        margin-bottom: 24px;
+        gap: 62px;
+        padding-bottom: 24px;
+
+        .card-picture {
+          position: relative;
+          img:first-child {
+            max-width: 128px;
+            max-height: 96px;
+          }
+          .pattern {
+            position: absolute;
+            z-index: -1;
+            right: -25px;
+            top: 10px;
+          }
+        }
+
+        .card-content {
+          padding-top: 8px;
+          h3 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #fff;
+            margin-bottom: 6px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: #fff;
+            opacity: .8;
+          }
+        }
+      }
+      .card:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.reservation-section {
+  background-image: url("/images/reservation-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .container {
+    padding: 95px 40px 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+  }
+}
+
+.footer {
+  background: #111111;
+  .container {
+    padding: 78px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      li {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+}
