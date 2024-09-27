@@ -15,6 +15,10 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+.pattern{
+  user-select: none;
+}
+
 .container {
   max-width: 1190px;
   margin: 0 auto;
@@ -192,13 +196,96 @@ body {
             font-size: 16px;
             line-height: 162%;
             color: #fff;
-            opacity: .8;
+            opacity: 0.8;
           }
         }
       }
       .card:last-child {
         border-bottom: 0;
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.gatherings-section {
+  background-image: url("/images/bg-pattern.png");
+  background-repeat: no-repeat;
+  transform: translateY(-80px);
+  padding-top: 160px;
+  background-position-x: -250px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .gatherings-picture {
+      position: relative;
+
+      .pattern {
+        position: absolute;
+        left: -40px;
+        top: -38px;
+      }
+    }
+
+    .gatherings-content {
+      max-width: 445px;
+      h2 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #242b37;
+        margin-bottom: 19px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #242b37;
+        margin-bottom: 60px;
+      }
+      button {
+        background: #000;
+        margin-bottom: 79px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        li {
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 165%;
+          letter-spacing: 0.15em;
+          color: #4c4c4c;
+          opacity: 0.5;
+        }
+        .active {
+          opacity: 1;
+          position: relative;
+          // &::marker {
+          //   content: "--------------------                               ";
+          //   color: #9e7f66;
+          //   letter-spacing: -2.4px;
+          //   position: absolute !important;
+          //   margin-left: -50px;
+          // }
+
+          &::before{
+            content: "";
+            position: absolute;
+            width: 95px;
+            height: 1px;
+            background: #9e7f66;
+            left: -130px;
+            top: 10px;
+
+            z-index: -1;
+          }
+        }
       }
     }
   }

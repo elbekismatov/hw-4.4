@@ -15,6 +15,13 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+.pattern {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .container {
   max-width: 1190px;
   margin: 0 auto;
@@ -220,6 +227,89 @@ body {
 .highlights-section .container .cards .card:last-child {
   border-bottom: 0;
   margin-bottom: 0;
+}
+
+.gatherings-section {
+  background-image: url("/images/bg-pattern.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-80px);
+      -ms-transform: translateY(-80px);
+          transform: translateY(-80px);
+  padding-top: 160px;
+  background-position-x: -250px;
+}
+.gatherings-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gatherings-section .container .gatherings-picture {
+  position: relative;
+}
+.gatherings-section .container .gatherings-picture .pattern {
+  position: absolute;
+  left: -40px;
+  top: -38px;
+}
+.gatherings-section .container .gatherings-content {
+  max-width: 445px;
+}
+.gatherings-section .container .gatherings-content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #242b37;
+  margin-bottom: 19px;
+}
+.gatherings-section .container .gatherings-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #242b37;
+  margin-bottom: 60px;
+}
+.gatherings-section .container .gatherings-content button {
+  background: #000;
+  margin-bottom: 79px;
+}
+.gatherings-section .container .gatherings-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.gatherings-section .container .gatherings-content ul li {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 165%;
+  letter-spacing: 0.15em;
+  color: #4c4c4c;
+  opacity: 0.5;
+}
+.gatherings-section .container .gatherings-content ul .active {
+  opacity: 1;
+  position: relative;
+}
+.gatherings-section .container .gatherings-content ul .active::before {
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 1px;
+  background: #9e7f66;
+  left: -130px;
+  top: 10px;
+  z-index: -1;
 }
 
 .reservation-section {
