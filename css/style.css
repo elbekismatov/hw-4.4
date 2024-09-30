@@ -20,6 +20,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  width: 140px;
 }
 
 .container {
@@ -350,6 +351,19 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer .container .information {
+  max-width: 914px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 124px;
+}
+.footer .container ul {
+  padding-right: 40px;
+}
 .footer .container ul li {
   font-weight: 400;
   font-size: 14px;
@@ -391,6 +405,9 @@ body {
     display: block;
     z-index: 1;
     top: -20px;
+  }
+  .section-content .pattern {
+    max-width: 140px;
   }
   .section-content .pattern img {
     margin-bottom: 0px;
@@ -496,6 +513,7 @@ body {
   .enjoyable-section .container .enjoyable-picture img {
     margin-bottom: 56px;
     width: 573px;
+    height: 360px;
   }
   .enjoyable-section .container .enjoyable-content {
     display: -webkit-box;
@@ -550,9 +568,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 140px;
+    overflow: hidden;
+    left: 500px;
   }
   .locally-section .container .pattern img {
-    margin-bottom: 42px;
+    max-width: 140px;
   }
   .locally-section .container .locally-picture {
     position: relative;
@@ -727,7 +748,7 @@ body {
   }
   .gatherings-section .container .gatherings-picture {
     position: relative;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
   .gatherings-section .container .gatherings-picture .pattern {
     position: absolute;
@@ -746,6 +767,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 47px;
   }
   .gatherings-section .container .gatherings-content h2 {
     font-weight: 700;
@@ -779,9 +801,12 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 12px;
+    position: absolute;
+    top: 800px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin-bottom: 30px;
   }
   .gatherings-section .container .gatherings-content ul li {
     font-family: League Spartan;
@@ -803,8 +828,8 @@ body {
     width: 95px;
     height: 1px;
     background: #9e7f66;
-    left: -130px;
-    top: 10px;
+    left: 47px;
+    top: 37px;
     z-index: -1;
   }
   .reservation-section {
@@ -814,7 +839,7 @@ body {
     background-position: center;
   }
   .reservation-section .container {
-    padding: 95px 40px 93px;
+    padding: 72px 40px 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -835,6 +860,7 @@ body {
     line-height: 100%;
     letter-spacing: -0.01em;
     color: #fff;
+    margin-bottom: 24px;
   }
   .footer {
     background: #111111;
@@ -849,6 +875,14 @@ body {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .footer .container .information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32px;
+    max-height: 202px;
   }
   .footer .container ul li {
     font-weight: 400;

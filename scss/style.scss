@@ -17,6 +17,7 @@ body {
 
 .pattern {
   user-select: none;
+  width: 140px;
 }
 
 .container {
@@ -318,8 +319,14 @@ body {
     padding: 78px 40px;
     display: flex;
     justify-content: space-between;
-
+    .information{
+      max-width: 914px;
+      justify-content: space-between;
+      display: flex;
+      gap: 124px;
+    }
     ul {
+      padding-right: 40px;
       li {
         font-weight: 400;
         font-size: 14px;
@@ -367,6 +374,7 @@ body {
       
     }
     .pattern{
+      max-width: 140px;
       img{
         margin-bottom: 0px;
       }
@@ -455,6 +463,7 @@ background-position:center;
         img {
           margin-bottom: 56px;
           width: 573px;
+          height: 360px;
         }
       }
   
@@ -487,8 +496,11 @@ background-position:center;
       .pattern{
         display: flex;
         justify-content: center ;
+        max-width: 140px;
+        overflow: hidden;
+        left: 500px ;
         img{
-          margin-bottom: 42px;
+          max-width: 140px;
         }
       }
       align-items: center;
@@ -611,7 +623,7 @@ background-position:center;
         opacity: 1;
         position: relative;
         // &::marker {
-        //   content: "--------------------                               ";
+        //   content: "--------------------`````````````````````````````-";
         //   color: #9e7f66;
         //   letter-spacing: -2.4px;
         //   position: absolute !important;
@@ -639,7 +651,7 @@ background-position:center;
       
       .gatherings-picture {
         position: relative;
-margin-bottom: 56px;
+margin-bottom: 57px;
         .pattern {
           position: absolute;
           left: -40px;
@@ -652,6 +664,7 @@ margin-bottom: 56px;
         display: flex;
         flex-direction: column;
         align-items:center;
+padding-top: 47px;
         h2 {
           font-weight: 700;
           font-size: 48px;
@@ -680,7 +693,10 @@ margin-bottom: 56px;
           display: flex;
          flex-direction: row;
           gap: 12px;
+          position: absolute;
+          top: 800px;
           order: 1;
+          margin-bottom: 30px;
           li {
             font-family: League Spartan;
             font-size: 17px;
@@ -709,8 +725,8 @@ margin-bottom: 56px;
               width: 95px;
               height: 1px;
               background: #9e7f66;
-              left: -130px;
-              top: 10px;
+              left: 47px;
+              top: 37px;
 
               z-index: -1;
             }
@@ -726,7 +742,7 @@ margin-bottom: 56px;
     background-size: cover;
     background-position: center;
     .container {
-      padding: 95px 40px 93px;
+      padding: 72px 40px 64px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -737,6 +753,7 @@ margin-bottom: 56px;
         line-height: 100%;
         letter-spacing: -0.01em;
         color: #fff;
+        margin-bottom: 24px;
       }
     }
   }
@@ -748,6 +765,12 @@ margin-bottom: 56px;
       display: flex;
       justify-content: space-between;
 flex-wrap: wrap;
+.information{
+  flex-direction: column;
+  gap: 32px
+  ;
+  max-height: 202px;
+}
       ul {
         li {
           font-weight: 400;
